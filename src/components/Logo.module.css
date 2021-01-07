@@ -1,0 +1,37 @@
+.wrapper {
+  font-style: italic;
+  line-height: 1;
+}
+
+.cssInJs,
+.stateManagers {
+  font-size: 4rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.cssInJs {
+  color: #fa5081;
+  text-align: left;
+  text-shadow: 2px 2px #7b0426;
+}
+
+.stateManagers {
+  color: #37ccfa;
+  text-align: right;
+  text-shadow: 2px 2px #024c63;
+}
+
+.vs {
+  max-width: 40rem;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: none;
+  color: #666;
+}
+
+.vs::before,
+.vs::after {
+  content: ' – ';
+}
