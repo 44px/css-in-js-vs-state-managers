@@ -1,0 +1,27 @@
+name: Publish to GitHub Pages
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '14'
+      - run: yarn install --frozen-lockfile
+      - run: yarn build
+      - run: touch out/.nojekyll
+
+      - uses: JamesIves/github-pages-deploy-action@3.5.9
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: out
