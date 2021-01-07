@@ -1,4 +1,5 @@
 import { FunctionComponent, useEffect } from 'react';
+import Head from 'next/head';
 import { Logo } from '../components/Logo';
 import { List } from '../components/List';
 import { Text } from '../components/Text';
@@ -25,6 +26,10 @@ const Home: FunctionComponent = () => {
 
   return (
     <div className="px-8 py-16 mx-auto w-full max-w-4xl space-y-16">
+      <Head>
+        <title>CSS-IN-JS vs STATE MANAGERS</title>
+      </Head>
+
       <Logo />
 
       <Text>
