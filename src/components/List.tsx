@@ -1,5 +1,6 @@
 import { VoidFunctionComponent } from 'react';
 import { Item } from '../data';
+import { Link } from './Link';
 
 type Props = {
   items: Item[];
@@ -16,12 +17,7 @@ export const List: VoidFunctionComponent<Props> = ({ items }) => {
     <ol className="pl-12 list-decimal list-outside space-y-3 text-xl whitespace-nowrap">
       {sortedItems.map(({ label, url }, index) => (
         <li key={index}>
-          <a
-            className="font-normal text-blue-800 border-b border-dashed border-current transition-colors hover:text-blue-400"
-            href={url}
-          >
-            {label}
-          </a>
+          <Link href={url}>{label}</Link>
         </li>
       ))}
     </ol>

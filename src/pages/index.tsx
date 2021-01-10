@@ -4,6 +4,7 @@ import { Logo } from '../components/Logo';
 import { List } from '../components/List';
 import { Text } from '../components/Text';
 import { Item, cssInJsLibs, stateManagers } from '../data';
+import { Link } from '../components/Link';
 
 type Result = 'tie' | 'cssInJs' | 'stateManagers';
 
@@ -58,7 +59,12 @@ const Home: FunctionComponent = () => {
         ) : (
           <p>It's tie!</p>
         )}
-        <p>Know a library not listed here? Add it!</p>
+        <p>
+          Know a library not listed here?{' '}
+          <Link href="https://github.com/44px/css-in-js-vs-state-managers/edit/main/src/data.ts">
+            Add it!
+          </Link>
+        </p>
       </div>
     </div>
   );
