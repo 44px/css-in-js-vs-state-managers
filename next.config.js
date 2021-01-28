@@ -1,3 +1,3 @@
 module.exports = {
-  basePath: '/css-in-js-vs-state-managers',
+  basePath: process.env.GH_PAGES_BASE_PATH || '',
 };
