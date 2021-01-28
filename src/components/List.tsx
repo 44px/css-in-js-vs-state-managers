@@ -15,7 +15,7 @@ export const List: VoidFunctionComponent<Props> = ({ items }) => {
   });
 
   return (
-    <ol className="pl-12 list-decimal list-outside space-y-3 text-xl whitespace-nowrap">
+    <ol className="pl-12 list-decimal list-outside space-y-3 text-lg sm:text-xl sm whitespace-nowrap">
       {sortedItems.map(({ label, url }, index) => (
         <Fade key={index}>
           <li>
