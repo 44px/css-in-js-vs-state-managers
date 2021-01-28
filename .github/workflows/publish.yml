@@ -16,10 +16,10 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: '14'
-        env:
-          GH_PAGES_BASE_PATH: /css-in-js-vs-state-managers
       - run: yarn install --frozen-lockfile
       - run: yarn build
+        env:
+          GH_PAGES_BASE_PATH: /css-in-js-vs-state-managers
       - run: touch out/.nojekyll
 
       - uses: JamesIves/github-pages-deploy-action@3.7.1
