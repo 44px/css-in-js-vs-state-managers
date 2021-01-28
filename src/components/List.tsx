@@ -1,4 +1,5 @@
 import { VoidFunctionComponent } from 'react';
+import Fade from 'react-reveal/Fade';
 import { Item } from '../data';
 import { Link } from './Link';
 
@@ -16,9 +17,11 @@ export const List: VoidFunctionComponent<Props> = ({ items }) => {
   return (
     <ol className="pl-12 list-decimal list-outside space-y-3 text-xl whitespace-nowrap">
       {sortedItems.map(({ label, url }, index) => (
-        <li key={index}>
-          <Link href={url}>{label}</Link>
-        </li>
+        <Fade key={index}>
+          <li>
+            <Link href={url}>{label}</Link>
+          </li>
+        </Fade>
       ))}
     </ol>
   );
