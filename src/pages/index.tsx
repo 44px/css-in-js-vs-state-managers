@@ -67,6 +67,16 @@ const Home: FunctionComponent = () => {
           </Link>
         </p>
       </div>
+
+      <div className="text-center">
+        <a href="https://github.com/44px/css-in-js-vs-state-managers">
+          <img
+            className="inline-block"
+            alt="GitHub last commit"
+            src="https://img.shields.io/github/last-commit/44px/css-in-js-vs-state-managers?label=last%20update&logo=github"
+          />
+        </a>
+      </div>
     </div>
   );
 };
