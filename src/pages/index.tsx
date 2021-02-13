@@ -1,4 +1,5 @@
-import { FunctionComponent, useEffect } from 'react';
+import { FunctionComponent } from 'react';
+import Fade from 'react-reveal/Fade';
 import Head from 'next/head';
 import { Logo } from '../components/Logo';
 import { List } from '../components/List';
@@ -16,14 +17,6 @@ const bgColors: Record<Result, string> = {
 
 const Home: FunctionComponent = () => {
   const result = getWinner(cssInJsLibs, stateManagers);
-
-  useEffect(() => {
-    const bgClass = bgColors[result];
-
-    document.body.classList.add(bgClass);
-
-    return () => document.body.classList.remove(bgClass);
-  }, [result]);
 
   return (
     <div className="px-8 py-16 mx-auto w-full max-w-4xl space-y-16">
@@ -52,13 +45,21 @@ const Home: FunctionComponent = () => {
       </div>
 
       <div className="text-center text-2xl">
-        {result === 'cssInJs' ? (
-          <p>CSS-in-JS wins!</p>
-        ) : result === 'stateManagers' ? (
-          <p>State managers wins!</p>
-        ) : (
-          <p>It's tie!</p>
-        )}
+        <Fade
+          duration={0}
+          onReveal={() => {
+            document.body.classList.add(bgColors[result]);
+          }}
+        >
+          {result === 'cssInJs' ? (
+            <p>CSS-in-JS wins!</p>
+          ) : result === 'stateManagers' ? (
+            <p>State managers wins!</p>
+          ) : (
+            <p>It's tie!</p>
+          )}
+        </Fade>
+
         <p>
           Know a library not listed here?{' '}
           <Link href="https://github.com/44px/css-in-js-vs-state-managers/edit/main/src/data.ts">
