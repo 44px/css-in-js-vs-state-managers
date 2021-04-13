@@ -32,6 +32,7 @@ export const cssInJsLibs: Item[] = [
   { label: 'treat', url: 'https://github.com/seek-oss/treat' },
   { label: 'TypeStyle', url: 'https://typestyle.github.io/' },
   { label: 'ui-box', url: 'https://github.com/segmentio/ui-box' },
+  { label: 'vanilla-extract', url: 'https://github.com/seek-oss/vanilla-extract' },
   { label: 'xstyled', url: 'https://xstyled.dev/' },
 ];
 
@@ -47,6 +48,7 @@ export const stateManagers: Item[] = [
   { label: 'MobX', url: 'https://mobx.js.org/' },
   { label: 'Overmind', url: 'https://overmindjs.org/' },
   { label: 'Parket', url: 'https://github.com/ForsakenHarmony/parket' },
+  { label: 'Pullstate', url: 'https://lostpebble.github.io/pullstate/' },
   { label: 'Reatom', url: 'https://reatom.js.org/' },
   { label: 'Reclare', url: 'https://github.com/oguzgelal/reclare' },
   { label: 'Recoil', url: 'https://recoiljs.org/' },
