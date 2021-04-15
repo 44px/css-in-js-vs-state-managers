@@ -8,6 +8,7 @@ export const cssInJsLibs: Item[] = [
   { label: 'astroturf', url: 'https://github.com/4Catalyzer/astroturf' },
   { label: 'Classy', url: 'https://inturn.github.io/classy/' },
   { label: 'CSJS', url: 'https://github.com/rtsao/csjs' },
+  { label: 'CSS-Zero', url: 'https://github.com/CraigCav/css-zero' },
   {
     label: 'CSS constructor',
     url: 'https://github.com/siddharthkp/css-constructor',
@@ -25,6 +26,7 @@ export const cssInJsLibs: Item[] = [
   { label: 'radium', url: 'https://formidable.com/open-source/radium/' },
   { label: 'reshadow', url: 'https://reshadow.dev/' },
   { label: 'Stitches', url: 'https://stitches.dev/' },
+  { label: 'style9', url: 'https://github.com/johanholmerin/style9' },
   { label: 'style-it', url: 'https://github.com/buildbreakdo/style-it' },
   { label: 'styled-components', url: 'https://styled-components.com/' },
   { label: 'Stylerun', url: 'https://artalar.github.io/stylerun/' },
