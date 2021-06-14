@@ -40,6 +40,7 @@ export const cssInJsLibs: Item[] = [
 
 export const stateManagers: Item[] = [
   { label: 'ActiveJS', url: 'https://activejs.dev/' },
+  { label: 'Clean-State', url: 'https://github.com/tnfe/clean-state' },
   { label: 'Constate', url: 'https://github.com/diegohaz/constate' },
   { label: 'Easy Peasy', url: 'https://easy-peasy.now.sh/' },
   { label: 'effector', url: 'https://effector.dev/' },
