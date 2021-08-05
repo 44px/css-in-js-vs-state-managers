@@ -49,6 +49,7 @@ export const stateManagers: Item[] = [
   { label: 'Jotai', url: 'https://jotai.surge.sh/' },
   { label: 'Microstates', url: 'https://github.com/thefrontside/microstates' },
   { label: 'MobX', url: 'https://mobx.js.org/' },
+  { label: 'Nano Stores', url: 'https://github.com/nanostores/nanostores' },
   { label: 'Overmind', url: 'https://overmindjs.org/' },
   { label: 'Parket', url: 'https://github.com/ForsakenHarmony/parket' },
   { label: 'Pullstate', url: 'https://lostpebble.github.io/pullstate/' },
