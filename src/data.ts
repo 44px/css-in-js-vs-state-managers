@@ -60,6 +60,7 @@ export const stateManagers: Item[] = [
   { label: 'reistore', url: 'https://github.com/Wroud/reistore' },
   { label: 'Robot', url: 'https://thisrobot.life/' },
   { label: 'Storeon', url: 'https://github.com/storeon/storeon' },
+  { label: 'Teaful', url: 'https://github.com/teafuljs/teaful' },
   { label: 'Undux', url: 'https://undux.org/' },
   { label: 'unistore', url: 'https://github.com/developit/unistore' },
   { label: 'Unstated', url: 'https://github.com/jamiebuilds/unstated' },
